@@ -13,6 +13,9 @@ bookdown::gitbook:
     edit:
       link: https://github.com/epongpipat/practical-ext-of-intro-stats-in-psy-using-R/edit/master/%s
       text: "Edit"
+    sharing:
+      github: yes
+      twitter: no
+      facebook: no
   split_by: chapter
-  sharing:
-    github: yes
+  
