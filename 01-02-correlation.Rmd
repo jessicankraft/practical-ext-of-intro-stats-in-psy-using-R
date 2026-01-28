@@ -74,14 +74,15 @@ A correlation was performed to test whether the amount years since obtaining a P
 
 ## Visualization
 ```{r, fig.cap="A scatterplot of years since Ph.D. and salary along with the line of best fit. The gray band represents the 95% CI."}
-ggplot(datasetSalaries, aes(scale(yrs.since.phd), scale(salary))) +
+ggplot(datasetSalaries, aes(yrs.since.phd, salary)) +
   geom_point(alpha = 0.25) +
   geom_smooth(method = "lm", color = "#3182bd") +
   labs(
     x = "Years since Ph.D.",
     y = "9-Month Salary (USD)"
   ) +
-  scale_y_continuous(labels = dollar) +
+  scale_x_continuous(sec.axis = sec_axis(scale, name = 'Years since Ph.D. [z-score]')) +
+  scale_y_continuous(labels = dollar, sec.axis = sec_axis(scale, labels = dollar, name = "9-Month Salary (USD) [z-score]")) +
   theme_classic()
 ```
 
