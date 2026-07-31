@@ -9,7 +9,7 @@ link-citations: yes
 github-repo: epongpipat/practical-ext-of-intro-stats-in-psy-using-R
 url: 'https\://ekarinpongpipat.com/practical-ext-of-intro-stats-in-psy-using-R/'
 description: "This book aims to provide a practical extension of introductory statistics typically taught in psychology into the general linear model (GLM) using R."
-subtitle: "This book aims to provide a practical extension of introductory statistics typically taught in psychology into the general linear model (GLM) using R."
+subtitle: '<img src="figs/logo-hex.svg" style="width: 160px; float: right; margin-left: 25px;">This book aims to provide a practical extension of introductory statistics typically taught in psychology into the general linear model (GLM) using R.'
 cover-image: "cover.png"
 ---
 
